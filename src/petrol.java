@@ -44,7 +44,7 @@ public class petrol extends car{
     public double getKm_for_ful_tank() {
         return km_for_ful_tank;
     }
-
+    @Override
     public double km_left(){
         return (km_on_refill*tank)/km_for_ful_tank;
     }

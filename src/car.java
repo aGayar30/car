@@ -1,15 +1,16 @@
-public abstract class car {
+public class car {
 
-private String model;
-private int year;
-private String motor;
+    private String model;
+    private int year;
+    private String motor;
 
-public car (String model , int year , String motor){
-    this.model = model;
-    this.year = year;
-    this.motor= motor;
-}
-    public car (String model , int year) {
+    public car(String model, int year, String motor) {
+        this.model = model;
+        this.year = year;
+        this.motor = motor;
+    }
+
+    public car(String model, int year) {
         this.model = model;
         this.year = year;
     }
@@ -46,8 +47,11 @@ public car (String model , int year , String motor){
         this.year = year;
     }
 
-    public abstract String getFuelType();
+    public String getFuelType(){
+            return null;
+}
 
-    public abstract double km_left();
-
+    public double km_left() {
+        return 0;
+    }
 }
